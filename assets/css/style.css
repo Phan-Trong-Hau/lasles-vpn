@@ -46,6 +46,29 @@ body {
     transition: 0.3s;
 }
 
+@media (hover: hover){
+    .nav-item {
+        position: relative;
+    }
+ 
+    .nav-item::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: auto;
+        right: 0;
+        width: 0;
+        height: 3px;
+        background: var(--orange-color);
+        transition: all 0.3s linear;
+    }
+    .nav-item:hover::after {
+        width: 100%;
+        left: 0;
+        right: auto;
+    }
+}
+
 /* Begin navbar */
 
 .navbar {
@@ -60,15 +83,15 @@ body {
 }
 .navbar-container .logo-img {
     margin-right: 100px;
-    vertical-align: sub;
-
+    transform: translateY(35%);
 }
 
 .navbar-container .menu {
     text-align: center;
     list-style: none;
-    display: inline-block;
-    padding-left: 40px;
+    display: inline-flex;
+    padding-left: 50px;
+    gap: 0 40px;
 }
 
 .menu .menu-item .nav-item {
@@ -108,8 +131,9 @@ body {
 .navbar-auth .signup:hover {
     background: var(--orange-color);
     color: var(--white-color);
-    transition: 0.3s;
+    transition: all 0.3s linear;
 }
+
 /* End navbar */
 
 
