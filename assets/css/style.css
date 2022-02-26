@@ -385,11 +385,6 @@ body {
     background: #F6F6F6;
 }
 
-.network-container {
-    position: absolute;
-    margin-left: -200px;
-}
-
 .network-content {
     display: inline-flex;
     min-height: 80px;
