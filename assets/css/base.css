@@ -1,0 +1,61 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --black0B-color: #0B132A;
+    --text-color: #4F5665;
+    --orange-color: #F53838;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 3rem;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    font-size: 1.6rem;
+    background: #FFFFFF;
+}
+
+img {
+    display: inline-flex;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+ul {
+    margin: 0 0 0 0;
+}
+
+.gird {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.gird__full-width {
+    width: 100%;
+}
+
+.gird__row {
+    display: flex;
+    flex-wrap: wrap;
+}
