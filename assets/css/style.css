@@ -319,6 +319,7 @@ body {
 }
 
 .plan-box__list {
+    width: 100%;
     position: absolute;
     margin-top: 270px;
     display: inline-flex;
@@ -579,7 +580,7 @@ body {
 .subscribe {
     position: relative;
     margin: 0 auto;
-    max-width: 1140px;
+    max-width: 80%;
     background: var(--white-color);
     border-radius: 10px;
     box-shadow: 0 30px 55px 10px rgba(13,16,37, 0.06);
@@ -603,7 +604,7 @@ body {
 }
 
 .subscribe-btn {
-    margin-left: 820px;
+    right: 70px;
     margin-top: 86.5px;
     font-weight: 700;
     line-height: 2.5rem;
@@ -620,16 +621,16 @@ body {
 .footer {
     margin-top: -300px;
     width: 100%;
-    height: 600px;
     background: #f0f0f0;
     text-align: center;
+    display: flex;
+    padding-bottom: 100px;
 }
 
 .footer-container {
-    position: absolute;
     margin-top: 250px;
     width: 1140px;
-    height: 100px;
+    display: flex;
 }
 
 .footer-logo {
@@ -638,11 +639,12 @@ body {
 }
 
 .footer-logo .text {
-    width: 340px;
+    max-width: 340px;
     margin-top: 20px;
 }
 
-.footer-logo .text strong {
+.footer-logo .text strong,
+.copyright strong {
     font-weight: 500;
 }
 
@@ -653,10 +655,6 @@ body {
 
 .copyright {
     color: #AFB5C0;
-}
-
-.copyright strong {
-    font-weight: 500;
 }
 
 .footer-item {
@@ -693,3 +691,51 @@ body {
 }
 
 /* End footer */
+
+
+/* Begin mobile */
+
+@media (max-width: 1140px) {
+    .menu-item {
+        display: none;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        margin-left: 100px;
+    }
+    .footer-heading {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 800px) {
+    .subscribe {
+        height: 300px;
+    }
+    .subscribe-content .heading {
+        margin-top: 30px;
+    }
+    .subscribe-btn {
+        margin-top: 200px;
+        bottom: 30px;
+        left: 70px;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-item {
+        flex-direction: column;
+    }
+    .footer-logo .text {
+        width: 200px;
+    }
+}
+
+@media (max-width: 430px) {
+    .subscribe {
+        height: 400px;
+    }
+} 
+
+/* End mobile */
