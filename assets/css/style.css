@@ -619,7 +619,7 @@ body {
 /* Begin footer */
 
 .footer {
-    margin-top: -300px;
+    margin-top: -500px;
     width: 100%;
     background: #f0f0f0;
     text-align: center;
@@ -628,7 +628,7 @@ body {
 }
 
 .footer-container {
-    margin-top: 250px;
+    margin-top: 450px;
     width: 1140px;
     display: flex;
 }
