@@ -32,17 +32,9 @@ a {
     transition: 0.3s;
 }
 
-a:hover {
-
-}
-
 button {
     cursor: pointer;
     border: none;
-}
-
-ul {
-    margin: 0 0 0 0;
 }
 
 .gird {
